@@ -1,0 +1,36 @@
+body.home {
+  h1 {
+    position: absolute;
+    font-size: 100px;
+    z-index: 10;
+    right: 11vw;
+    top: 20vh;
+  }
+
+  .author {
+    position: absolute;
+    font-size: 35px;
+    right: 7vw;
+    top: 39vh;
+  }
+
+  p {
+    position: absolute;
+    top: 57vh;
+    width: 40vw;
+    right: 4vw;
+  }
+
+  svg {
+    transform: rotate(59deg);
+    position: absolute;
+    bottom: 20vh;
+    left: 13vw;
+    
+    rect {
+      stroke: $red;
+      stroke-width: 6px;
+      fill: transparent;
+    }
+  }
+}

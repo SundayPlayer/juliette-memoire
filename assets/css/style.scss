@@ -1,0 +1,37 @@
+$grey: #707070;
+$red: #A40300;
+
+@font-face {
+  font-family: Futura;
+  src: url("../font/futura_medium_bt.ttf");
+}
+
+@font-face {
+  font-family: Futura-Italic;
+  src: url("../font/futura_medium_italic.ttf");
+}
+
+* {
+  font-family: Futura;
+  font-weight: 500;
+}
+
+h1, h2, h3, p, span {
+  color: $grey;
+}
+
+p {
+  font-size: 25px;
+}
+
+.augmented {
+  color: $red;
+}
+
+i.arrow {
+  .arrow_bottom {
+
+  }
+}
+
+@import 'home';

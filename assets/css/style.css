@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Futura;
+  src: url("../font/futura_medium_bt.ttf"); }
+@font-face {
+  font-family: Futura-Italic;
+  src: url("../font/futura_medium_italic.ttf"); }
+* {
+  font-family: Futura;
+  font-weight: 500; }
+
+h1, h2, h3, p, span {
+  color: #707070; }
+
+p {
+  font-size: 25px; }
+
+.augmented {
+  color: #A40300; }
+
+body.home h1 {
+  position: absolute;
+  font-size: 100px;
+  z-index: 10;
+  right: 11vw;
+  top: 20vh; }
+body.home .author {
+  position: absolute;
+  font-size: 35px;
+  right: 7vw;
+  top: 39vh; }
+body.home p {
+  position: absolute;
+  top: 57vh;
+  width: 40vw;
+  right: 4vw; }
+body.home svg {
+  transform: rotate(59deg);
+  position: absolute;
+  bottom: 20vh;
+  left: 13vw; }
+  body.home svg rect {
+    stroke: #A40300;
+    stroke-width: 6px;
+    fill: transparent; }
+
+/*# sourceMappingURL=style.css.map */
