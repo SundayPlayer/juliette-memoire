@@ -1,0 +1,26 @@
+body.summary {
+  img {
+    position: absolute;
+    left: -15vw;
+    max-height: 99vh;
+  }
+
+  .text {
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    width: 40vw;
+    text-align: center;
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 94vh;
+
+    a {
+      text-decoration: none;
+      color: $red;
+      font-style: italic;
+    }
+  }
+}
