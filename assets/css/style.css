@@ -269,6 +269,15 @@ body.home iframe {
   margin: 1em auto;
 }
 
+body.home a#index-arrow-right {
+  position: absolute;
+  top: 512vh;
+  right: 0;
+  margin-bottom: 1em;
+  font-size: 40px;
+  color: black;
+}
+
 body.summary img {
   position: absolute;
   left: -15vw;
