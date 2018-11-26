@@ -1,0 +1,43 @@
+svg#pg4-1 {
+  position: absolute;
+  top: 320vh;
+  left: 10%;
+
+  line {
+    stroke: $grey;
+    stroke-width: 6px;
+  }
+}
+
+svg#pg4-2 {
+  position: absolute;
+  top: 345vh;
+  left: 10vw;
+
+  line {
+    stroke: $red;
+    stroke-width: 6px;
+  }
+}
+
+svg#pg4-3 {
+  position: absolute;
+  top: 390vh;
+  left: 1vh;
+
+  line {
+    stroke: $grey;
+    stroke-width: 6px;
+  }
+}
+
+svg#pg4-4 {
+  position: absolute;
+  top: 355vh;
+  left: 85vw;
+
+  line {
+    stroke: $red;
+    stroke-width: 6px;
+  }
+}

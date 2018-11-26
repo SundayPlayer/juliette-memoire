@@ -17,30 +17,171 @@ p {
 .augmented {
   color: #A40300; }
 
-body.home h1 {
+body.home {
+  overflow-x: hidden; }
+  body.home h1 {
+    position: absolute;
+    font-size: 100px;
+    z-index: 10;
+    right: 11vw;
+    top: 20vh; }
+  body.home .author {
+    position: absolute;
+    font-size: 35px;
+    right: 7vw;
+    top: 39vh; }
+  body.home p#text1-1 {
+    position: absolute;
+    top: 57vh;
+    width: 40vw;
+    right: 4vw; }
+  body.home svg#pg1-1 {
+    transform: rotate(59deg);
+    position: absolute;
+    bottom: 20vh;
+    left: 12vw; }
+    body.home svg#pg1-1 rect {
+      stroke: #A40300;
+      stroke-width: 6px;
+      fill: transparent; }
+  body.home svg#pg2-1 {
+    position: absolute;
+    top: 90vh;
+    left: 50vw; }
+    body.home svg#pg2-1 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg2-2 {
+    position: absolute;
+    top: 110vh;
+    left: 10vw; }
+    body.home svg#pg2-2 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg2-3 {
+    position: absolute;
+    top: 105vh;
+    left: 85vw; }
+    body.home svg#pg2-3 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg2-4 {
+    position: absolute;
+    top: 140vh;
+    left: 5vw; }
+    body.home svg#pg2-4 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg2-5 {
+    position: absolute;
+    top: 135vh;
+    left: 10vw; }
+    body.home svg#pg2-5 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg2-6 {
+    position: absolute;
+    top: 158vh;
+    left: 45vw; }
+    body.home svg#pg2-6 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg2-7 {
+    position: absolute;
+    top: 150vh;
+    left: 50vw; }
+    body.home svg#pg2-7 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg2-8 {
+    position: absolute;
+    top: 195vh;
+    left: 5vw; }
+    body.home svg#pg2-8 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg3-1 {
+    position: absolute;
+    top: 220vh;
+    left: 10%; }
+    body.home svg#pg3-1 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg3-2 {
+    position: absolute;
+    top: 245vh;
+    left: 43%; }
+    body.home svg#pg3-2 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg3-3 {
+    position: absolute;
+    top: 245vh;
+    left: 10vw; }
+    body.home svg#pg3-3 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg3-4 {
+    position: absolute;
+    top: 290vh;
+    left: 1vh; }
+    body.home svg#pg3-4 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg3-5 {
+    position: absolute;
+    top: 255vh;
+    left: 85vw; }
+    body.home svg#pg3-5 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg4-1 {
+    position: absolute;
+    top: 320vh;
+    left: 10%; }
+    body.home svg#pg4-1 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg4-2 {
+    position: absolute;
+    top: 345vh;
+    left: 10vw; }
+    body.home svg#pg4-2 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+  body.home svg#pg4-3 {
+    position: absolute;
+    top: 390vh;
+    left: 1vh; }
+    body.home svg#pg4-3 line {
+      stroke: #707070;
+      stroke-width: 6px; }
+  body.home svg#pg4-4 {
+    position: absolute;
+    top: 355vh;
+    left: 85vw; }
+    body.home svg#pg4-4 line {
+      stroke: #A40300;
+      stroke-width: 6px; }
+
+body.summary img {
   position: absolute;
-  font-size: 100px;
-  z-index: 10;
-  right: 11vw;
-  top: 20vh; }
-body.home .author {
+  left: -15vw;
+  max-height: 99vh; }
+body.summary .text {
   position: absolute;
-  font-size: 35px;
-  right: 7vw;
-  top: 39vh; }
-body.home p {
-  position: absolute;
-  top: 57vh;
+  top: 5vh;
+  right: 10vw;
   width: 40vw;
-  right: 4vw; }
-body.home svg {
-  transform: rotate(59deg);
-  position: absolute;
-  bottom: 20vh;
-  left: 13vw; }
-  body.home svg rect {
-    stroke: #A40300;
-    stroke-width: 6px;
-    fill: transparent; }
+  text-align: center;
+  font-size: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 94vh; }
+  body.summary .text a {
+    text-decoration: none;
+    color: #A40300;
+    font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
