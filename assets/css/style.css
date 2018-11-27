@@ -278,7 +278,7 @@ body.home svg#pg4-4 line {
 
 body.home p#text1-2 {
   position: absolute;
-  top: 450vh;
+  top: 440vh;
   left: 0;
   right: 0;
   text-align: center;
@@ -287,7 +287,7 @@ body.home p#text1-2 {
 
 body.home iframe {
   position: absolute;
-  top: 460vh;
+  top: 450vh;
   left: 0;
   right: 0;
   margin: 1em auto;
@@ -295,7 +295,7 @@ body.home iframe {
 
 body.home .bottom {
   position: absolute;
-  top: 550vh;
+  top: 565vh;
   right: 0;
 }
 
