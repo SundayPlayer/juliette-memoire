@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sommaire | Mémoire Juliette Pointereau</title>
+    <script src="./assets/js/turbolinks.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/icono.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col align-end">
+                <p class="augmented">
+                    Je me rend alors compte de la possibilité d’étudier le
+                    design textile en Suède en france seulement deux écoles
+                    publiques propose cette filière. Et séparent de Print ( motifs
+                    imprimés) du Wave ( travail de la construction de la
+                    matière). En suède on apprend les deux ensemble.
+                </p>
+            </div>
+            <div class="col">
+                <p>
+                    On échanges sur nos points de vus, nos
+                    pratiques. Elles me demandent si je peux leur
+                    envoyer des projets que j’ai pu mener au sein
+                    de l’école ou personnellement. A ce moment là
+                    j’étais dans une pratique similaire aux leurs.
+                    Nous discutons, j’en apprend beaucoup sur la
+                    culture suédoise, l’intérêt qui est porter au
+                    textile dans leur pays. C’est à ce moment précis
+                    que j’envisage de partir en erasmus l’année
+                    d’après en suède dans une école afin
+                    d’apprendre d’avantage sur les techniques
+                    qu’ils emploient. Avoir une connaissance et une
+                    pratique plus technique sur le sujet. Me nourrir
+                    intensément de ce que je pourrais apprendre là
+                    bas que je ne peux apprendre ici, au Mans.
+                    Alors elles m’aident à trouver des écoles qui
+                    pourraient correspondre à mes attentes et à
+                    mon travail. On en trouve 6.Malheureusement
+                    mes demandes d’erasmus n’ont pas pu aboutir.
+                </p>
+            </div>
+            <div class="col align-start">
+                <p class="augmented">
+                    possibilité de faire un stage avec
+                    elles. Elles m’expliquent que le
+                    statut de stagiaire en France et
+                    en Suède est totalement différent
+                    et qu’il va être bien trop difficile
+                    de faire un statut qui convient
+                    aux deux institutions.
+                    <br><br>
+                    De plus elles sont très souvent en
+                    déplacement et ne pouvaient pas
+                    se permettrent de s’engager
+                    auprès de moi. Elles me dirigent
+                    vers d’autres personnes, qui me
+                    fournissent les même explications.
+                    Par contre tout le monde me
+                    propose de venir sur un séjour en
+                    Suède afin de pouvoir les
+                    rencontrer et discuter avec eux.
+                    Ce qui me pousse donc à partir,
+                    et à venir à leur rencontre.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a id="augmented-btn">
+            <i class="icono-plus"></i>
+        </a>
+        <a href="rencontre_katarina_evans_brieditis_2.html">
+            <i class="icono-caretLeft"></i>
+        </a>
+        <a href="#">
+            <i class="icono-caretRight"></i>
+        </a>
+    </div>
+
+</body>
+
+<script>
+    // Displays augmented text
+    augmented = document.getElementById('augmented-btn')
+    augmented.addEventListener('click', () => {
+        let list = document.getElementsByClassName('augmented')
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.opacity = 100
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sommaire | Mémoire Juliette Pointereau</title>
+    <script src="./assets/js/turbolinks.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/icono.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col align-end">
+                <p class="augmented">
+                    De plus leur objet réalisés sont des tapis. Un
+                    revêtement de sol. Une des utilisations les plus
+                    fréquente. Malgré le fait qu’elles les exposent
+                    davantage comme des oeuvres d’art plutôt
+                    qu’en tant que tapis (utilisable) lors de leurs
+                    expositions.
+                    <br>
+                    Ce qui n’enlève rien à l’intérêt que je porte
+                    envers leur travaille. Seulement ma vision
+                    aujourd’hui à évoluer et je trouve dommage de
+                    ne pas donner une nouvelle vision du textile .
+                    Mais leur enjeux étaient social et écologique.
+                </p>
+            </div>
+            <div class="col">
+                <p>J’ai rencontré ces deux designers suédoises lors
+                    d’une de leur exposition en avril 2015 à l’institut
+                    suédois à Paris.Elle tenaient une conférence pour
+                    parler de leur travaille RE RAG RUG et échanger
+                    avec nous. Leur travaille à l’époque me parlait
+                    beaucoup. Elles sont dans une optique de
+                    recyclage du textile afin de parer la
+                    consommation affolante de cette matière. Ce
+                    projet RE RAG RUG est un projet d’une année.
+                    Elles ont confectionnées 12 tapis en 12
+                    techniques d’assemblages différents avec des
+                    déchets industriels. Ce qui fait un tapis par mois.
+                    Afin d’apprendre ces 12 techniques elles ont
+                    voyagées pour trouver des personnes aptent à
+                    leur transmettre. Notamment en Inde, la pratique
+                    du tissage est très réputé là bas.
+                    Ce qui m’intéressait dans leur travail c’était cette
+                    idée d'UP-Cycling et cette échange social, afin
+                    d’en apprendre toujours plus.
+                    Elle s’adaptent en fonction du textile qu’elles
+                    récupèrent. Les matières sont différentes les unes
+                    des autres, il leur a fallu savoir comment les
+                    assemblées. La couleur est également l’originale.
+                </p>
+            </div>
+            <div class="col align-start">
+                <p class="augmented">
+                    Aujourd’hui j’apprécie toujours leur travaille mais je
+                    me rend compte à quel point elle reste dans une
+                    pratique artisanale et traditionnelle du textile.
+                    Même si elles prennent en compte la matière, elles
+                    n’exploitent pas vraiment les propriétés propres à
+                    chacune d’elles.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a id="augmented-btn">
+            <i class="icono-plus"></i>
+        </a>
+        <a href="#">
+            <i class="icono-caretLeft"></i>
+        </a>
+        <a href="rencontre_katarina_evans_brieditis_2.html">
+            <i class="icono-caretRight"></i>
+        </a>
+    </div>
+
+</body>
+
+<script>
+    // Displays augmented text
+    let augmented = document.getElementById('augmented-btn')
+    augmented.addEventListener('click', () => {
+        let list = document.getElementsByClassName('augmented')
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.opacity = 100
+        }
+    })
+</script>
+
+</html>

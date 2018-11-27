@@ -13,7 +13,11 @@
   font-weight: 500;
 }
 
-h1, h2, h3, p, span {
+h1,
+h2,
+h3,
+p,
+span {
   color: #707070;
 }
 
@@ -22,6 +26,26 @@ p {
 }
 
 .augmented {
+  opacity: 0;
+  color: #A40300;
+  font-style: italic;
+}
+
+.nav-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  padding: 1em;
+}
+
+.nav-group a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-group a#augmented-btn {
+  cursor: pointer;
   color: #A40300;
 }
 
@@ -269,13 +293,10 @@ body.home iframe {
   margin: 1em auto;
 }
 
-body.home a#index-arrow-right {
+body.home .bottom {
   position: absolute;
-  top: 512vh;
+  top: 550vh;
   right: 0;
-  margin-bottom: 1em;
-  font-size: 40px;
-  color: black;
 }
 
 body.summary img {
@@ -307,5 +328,49 @@ body.summary .text a {
   text-decoration: none;
   color: #A40300;
   font-style: italic;
+}
+
+body.summary .bottom {
+  position: absolute;
+  top: 110vh;
+  right: 0;
+}
+
+.container .row {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+.container .align-end {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.container .align-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .align-start {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+p {
+  font-size: 18px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

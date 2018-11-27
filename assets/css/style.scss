@@ -1,6 +1,10 @@
 $grey: #707070;
 $red: #A40300;
 
+$font-size-sm: 18px;
+$font-size-md: 25px;
+$font-size-lg: 40px;
+
 @font-face {
   font-family: Futura;
   src: url("../font/futura_medium_bt.ttf");
@@ -16,23 +20,39 @@ $red: #A40300;
   font-weight: 500;
 }
 
-h1, h2, h3, p, span {
+h1,
+h2,
+h3,
+p,
+span {
   color: $grey;
 }
 
 p {
-  font-size: 25px;
+  font-size: $font-size-md;
 }
 
 .augmented {
+  opacity: 0;
   color: $red;
+  font-style: italic;
 }
 
-i.arrow {
-  .arrow_bottom {
-
+// Utils
+.nav-group {
+  display: flex;
+  float: right;
+  padding: 1em;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a#augmented-btn {
+    cursor: pointer;
+    color: $red;
   }
 }
 
 @import 'home';
 @import 'summary';
+@import 'rencontre_katarina_evans_brieditis'
