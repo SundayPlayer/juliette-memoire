@@ -1,173 +1,310 @@
 @font-face {
   font-family: Futura;
-  src: url("../font/futura_medium_bt.ttf"); }
+  src: url("../font/futura_medium_bt.ttf");
+}
+
 @font-face {
   font-family: Futura-Italic;
-  src: url("../font/futura_medium_italic.ttf"); }
+  src: url("../font/futura_medium_italic.ttf");
+}
+
 * {
   font-family: Futura;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
-h1, h2, h3, p, span {
-  color: #707070; }
+h1,
+h2,
+h3,
+p,
+span {
+  color: #707070;
+}
 
 p {
-  font-size: 25px; }
+  font-size: 25px;
+}
 
 .augmented {
-  color: #A40300; }
+  opacity: 0;
+  color: #A40300;
+  font-style: italic;
+}
+
+.nav-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  padding: 1em;
+}
+
+.nav-group a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-group a#augmented-btn {
+  cursor: pointer;
+  color: #A40300;
+}
 
 body.home {
-  overflow-x: hidden; }
-  body.home h1 {
-    position: absolute;
-    font-size: 100px;
-    z-index: 10;
-    right: 11vw;
-    top: 20vh; }
-  body.home .author {
-    position: absolute;
-    font-size: 35px;
-    right: 7vw;
-    top: 39vh; }
-  body.home p#text1-1 {
-    position: absolute;
-    top: 57vh;
-    width: 40vw;
-    right: 4vw; }
-  body.home svg#pg1-1 {
-    transform: rotate(59deg);
-    position: absolute;
-    bottom: 20vh;
-    left: 12vw; }
-    body.home svg#pg1-1 rect {
-      stroke: #A40300;
-      stroke-width: 6px;
-      fill: transparent; }
-  body.home svg#pg2-1 {
-    position: absolute;
-    top: 90vh;
-    left: 50vw; }
-    body.home svg#pg2-1 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg2-2 {
-    position: absolute;
-    top: 110vh;
-    left: 10vw; }
-    body.home svg#pg2-2 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg2-3 {
-    position: absolute;
-    top: 105vh;
-    left: 85vw; }
-    body.home svg#pg2-3 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg2-4 {
-    position: absolute;
-    top: 140vh;
-    left: 5vw; }
-    body.home svg#pg2-4 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg2-5 {
-    position: absolute;
-    top: 135vh;
-    left: 10vw; }
-    body.home svg#pg2-5 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg2-6 {
-    position: absolute;
-    top: 158vh;
-    left: 45vw; }
-    body.home svg#pg2-6 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg2-7 {
-    position: absolute;
-    top: 150vh;
-    left: 50vw; }
-    body.home svg#pg2-7 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg2-8 {
-    position: absolute;
-    top: 195vh;
-    left: 5vw; }
-    body.home svg#pg2-8 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg3-1 {
-    position: absolute;
-    top: 220vh;
-    left: 10%; }
-    body.home svg#pg3-1 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg3-2 {
-    position: absolute;
-    top: 245vh;
-    left: 43%; }
-    body.home svg#pg3-2 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg3-3 {
-    position: absolute;
-    top: 245vh;
-    left: 10vw; }
-    body.home svg#pg3-3 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg3-4 {
-    position: absolute;
-    top: 290vh;
-    left: 1vh; }
-    body.home svg#pg3-4 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg3-5 {
-    position: absolute;
-    top: 255vh;
-    left: 85vw; }
-    body.home svg#pg3-5 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg4-1 {
-    position: absolute;
-    top: 320vh;
-    left: 10%; }
-    body.home svg#pg4-1 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg4-2 {
-    position: absolute;
-    top: 345vh;
-    left: 10vw; }
-    body.home svg#pg4-2 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
-  body.home svg#pg4-3 {
-    position: absolute;
-    top: 390vh;
-    left: 1vh; }
-    body.home svg#pg4-3 line {
-      stroke: #707070;
-      stroke-width: 6px; }
-  body.home svg#pg4-4 {
-    position: absolute;
-    top: 355vh;
-    left: 85vw; }
-    body.home svg#pg4-4 line {
-      stroke: #A40300;
-      stroke-width: 6px; }
+  overflow-x: hidden;
+}
+
+body.home h1 {
+  position: absolute;
+  font-size: 100px;
+  z-index: 10;
+  right: 11vw;
+  top: 20vh;
+}
+
+body.home .author {
+  position: absolute;
+  font-size: 35px;
+  right: 7vw;
+  top: 39vh;
+}
+
+body.home p#text1-1 {
+  position: absolute;
+  top: 57vh;
+  width: 40vw;
+  right: 4vw;
+}
+
+body.home svg#pg1-1 {
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
+  position: absolute;
+  bottom: 20vh;
+  left: 12vw;
+}
+
+body.home svg#pg1-1 rect {
+  stroke: #A40300;
+  stroke-width: 6px;
+  fill: transparent;
+}
+
+body.home svg#pg2-1 {
+  position: absolute;
+  top: 90vh;
+  left: 50vw;
+}
+
+body.home svg#pg2-1 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-2 {
+  position: absolute;
+  top: 110vh;
+  left: 10vw;
+}
+
+body.home svg#pg2-2 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-3 {
+  position: absolute;
+  top: 105vh;
+  left: 85vw;
+}
+
+body.home svg#pg2-3 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-4 {
+  position: absolute;
+  top: 140vh;
+  left: 5vw;
+}
+
+body.home svg#pg2-4 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-5 {
+  position: absolute;
+  top: 135vh;
+  left: 10vw;
+}
+
+body.home svg#pg2-5 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-6 {
+  position: absolute;
+  top: 158vh;
+  left: 45vw;
+}
+
+body.home svg#pg2-6 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-7 {
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+}
+
+body.home svg#pg2-7 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg2-8 {
+  position: absolute;
+  top: 195vh;
+  left: 5vw;
+}
+
+body.home svg#pg2-8 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg3-1 {
+  position: absolute;
+  top: 220vh;
+  left: 10%;
+}
+
+body.home svg#pg3-1 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg3-2 {
+  position: absolute;
+  top: 245vh;
+  left: 43%;
+}
+
+body.home svg#pg3-2 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg3-3 {
+  position: absolute;
+  top: 245vh;
+  left: 10vw;
+}
+
+body.home svg#pg3-3 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg3-4 {
+  position: absolute;
+  top: 290vh;
+  left: 1vh;
+}
+
+body.home svg#pg3-4 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg3-5 {
+  position: absolute;
+  top: 255vh;
+  left: 85vw;
+}
+
+body.home svg#pg3-5 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg4-1 {
+  position: absolute;
+  top: 320vh;
+  left: 10%;
+}
+
+body.home svg#pg4-1 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg4-2 {
+  position: absolute;
+  top: 345vh;
+  left: 10vw;
+}
+
+body.home svg#pg4-2 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home svg#pg4-3 {
+  position: absolute;
+  top: 390vh;
+  left: 1vh;
+}
+
+body.home svg#pg4-3 line {
+  stroke: #707070;
+  stroke-width: 6px;
+}
+
+body.home svg#pg4-4 {
+  position: absolute;
+  top: 355vh;
+  left: 85vw;
+}
+
+body.home svg#pg4-4 line {
+  stroke: #A40300;
+  stroke-width: 6px;
+}
+
+body.home p#text1-2 {
+  position: absolute;
+  top: 440vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+body.home iframe {
+  position: absolute;
+  top: 450vh;
+  left: 0;
+  right: 0;
+  margin: 1em auto;
+}
+
+body.home .bottom {
+  position: absolute;
+  top: 565vh;
+  right: 0;
+}
 
 body.summary img {
   position: absolute;
   left: -15vw;
-  max-height: 99vh; }
+  max-height: 99vh;
+}
+
 body.summary .text {
   position: absolute;
   top: 5vh;
@@ -175,13 +312,65 @@ body.summary .text {
   width: 40vw;
   text-align: center;
   font-size: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 94vh; }
-  body.summary .text a {
-    text-decoration: none;
-    color: #A40300;
-    font-style: italic; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 94vh;
+}
 
+body.summary .text a {
+  text-decoration: none;
+  color: #A40300;
+  font-style: italic;
+}
+
+body.summary .bottom {
+  position: absolute;
+  top: 110vh;
+  right: 0;
+}
+
+.container .row {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+.container .align-end {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.container .align-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .align-start {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+p {
+  font-size: 18px;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
