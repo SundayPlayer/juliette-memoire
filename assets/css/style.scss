@@ -42,11 +42,13 @@ p {
 .nav-group {
   display: flex;
   float: right;
-  padding: 1em;
+  margin: 0 5em 5em 0;
+
   a {
     text-decoration: none;
     color: black;
   }
+
   a#augmented-btn {
     cursor: pointer;
     color: $red;
@@ -55,4 +57,9 @@ p {
 
 @import 'home';
 @import 'summary';
-@import 'rencontre_katarina_evans_brieditis'
+@import 'rencontre_katarina_evans_brieditis';
+@import 'evolution_technique_lie_au_tissage';
+@import 'utils/border';
+@import 'utils/flex';
+@import 'utils/margin';
+@import 'utils/padding';
