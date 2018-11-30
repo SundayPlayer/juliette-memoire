@@ -45,6 +45,7 @@ p {
 }
 
 .nav-group a#augmented-btn {
+  display: none; /* visible only if necessary */
   cursor: pointer;
   color: #A40300;
 }
