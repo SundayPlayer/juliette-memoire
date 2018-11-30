@@ -1,4 +1,5 @@
 .idea/
 .sass-cache/
 .vscode/
-./assets/css/*.css
+./assets/css/style.css
+./assets/css/style.css.map
