@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <title>Sommaire | Mémoire Juliette Pointereau</title>
+    <title>Rencontres | Mémoire Juliette Pointereau</title>
     <script src="./assets/js/turbolinks.js"></script>
+    <script src="./assets/js/augmented.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/icono.min.css">
 </head>
@@ -71,7 +72,7 @@
         <a id="augmented-btn">
             <i class="icono-plus"></i>
         </a>
-        <a href="#">
+        <a href="evolution_technique_lie_au_tissage_machine_mecanique_1786.html">
             <i class="icono-caretLeft"></i>
         </a>
         <a href="rencontre_katarina_evans_brieditis_2.html">
@@ -80,16 +81,5 @@
     </div>
 
 </body>
-
-<script>
-    // Displays augmented text
-    let augmented = document.getElementById('augmented-btn')
-    augmented.addEventListener('click', () => {
-        let list = document.getElementsByClassName('augmented')
-        for (var i = 0; i < list.length; i++) {
-            list[i].style.opacity = 100
-        }
-    })
-</script>
 
 </html>

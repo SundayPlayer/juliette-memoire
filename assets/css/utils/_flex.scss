@@ -1,0 +1,125 @@
+/**
+ * Flex utilities
+ *
+ * 29nov2018
+ */
+.flex {
+  display: flex;
+
+  // GROW ITEMS
+  @for $size from 1 through 5 {
+    .grow-#{$size} {
+      flex-grow: $size;
+    }
+  }
+
+  // SHRINK ITEMS
+  @for $size from 1 through 5 {
+    .shrink-#{$size} {
+      flex-shrink: $size;
+    }
+  }
+
+  @each $type in auto,
+  start,
+  end,
+  center,
+  baseline,
+  stretch {
+    @if $type==start OR $type==end {
+      & .align-self-#{$type} {
+        align-self: flex-#{$type};
+      }
+    }
+    @else {
+      & .align-self-#{$type} {
+        align-self: #{$type};
+      }
+    }
+  }
+}
+
+// Direction
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+// Wrap
+.wrap {
+  flex-wrap: wrap;
+}
+
+// Justify content
+@each $type in start,
+end,
+center,
+between,
+around,
+evenly {
+  @if $type==between OR $type==around OR $type==evenly {
+    .justify-#{$type} {
+      justify-content: space-#{$type};
+    }
+  }
+
+  @else if $type==start OR $type==end {
+    .justify-#{$type} {
+      justify-content: flex-#{$type};
+    }
+  }
+
+  @else {
+    .justify-#{$type} {
+      justify-content: #{$type};
+    }
+  }
+}
+
+// Align items
+@each $type in start,
+end,
+center,
+baseline,
+stretch {
+  @if $type==start OR $type==end {
+    .align-items-#{$type} {
+      align-items: flex-#{$type};
+    }
+  }
+
+  @else {
+    .align-items-#{$type} {
+      align-items: #{$type};
+    }
+  }
+}
+
+// Align content
+@each $type in start,
+end,
+center,
+between,
+around,
+stretch {
+  @if $type==between OR $type==around {
+    .align-content-#{$type} {
+      align-content: space-#{$type};
+    }
+  }
+
+  @else if $type==start OR $type==end {
+    .align-content-#{$type} {
+      align-content: flex-#{$type};
+    }
+  }
+
+  @else {
+    .align-content-#{$type} {
+      align-content: #{$type};
+    }
+  }
+}
