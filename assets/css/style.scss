@@ -41,8 +41,9 @@ p {
 // Utils
 .nav-group {
   display: flex;
-  float: right;
-  margin: 0 5em 5em 0;
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
 
   a {
     text-decoration: none;
@@ -63,3 +64,26 @@ p {
 @import 'utils/flex';
 @import 'utils/margin';
 @import 'utils/padding';
+
+.sto-i1 {
+  margin-right: 10em;
+  margin-top: 5em;
+}
+
+.sto-i2 {
+  margin-right: 10em;
+  margin-top: 8em;
+  height: 30em;
+}
+
+.sto-i3 {
+
+}
+
+.keb-i1{
+  margin-top: 5em;
+}
+
+.gros-monssieur {
+  height: 45em;
+}
