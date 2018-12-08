@@ -387,4 +387,13 @@ p {
 .gros-monssieur {
   height: 45em; }
 
+.img-banner {
+  display: flex;
+  max-height: 150px;
+  justify-content: center; }
+  .img-banner img {
+    margin-left: 2em; }
+    .img-banner img:first-child {
+      margin-left: 0; }
+
 /*# sourceMappingURL=style.css.map */
