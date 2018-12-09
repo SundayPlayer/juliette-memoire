@@ -91,14 +91,11 @@ p {
 .img-banner {
   display: flex;
   max-height: 150px;
-  justify-content: center;
+  justify-content: space-around;
 
   img {
-    margin-left: 2em;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    max-height: inherit;
+    padding: 0 10px;
   }
 }
 
