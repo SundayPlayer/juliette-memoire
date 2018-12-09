@@ -390,11 +390,10 @@ p {
 .img-banner {
   display: flex;
   max-height: 150px;
-  justify-content: center; }
+  justify-content: space-around; }
   .img-banner img {
-    margin-left: 2em; }
-    .img-banner img:first-child {
-      margin-left: 0; }
+    max-height: inherit;
+    padding: 0 10px; }
 
 .player {
   color: #707070;
