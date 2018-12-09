@@ -396,4 +396,8 @@ p {
     .img-banner img:first-child {
       margin-left: 0; }
 
+.player {
+  color: #707070;
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
