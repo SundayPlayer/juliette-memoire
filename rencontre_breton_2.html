@@ -14,15 +14,14 @@
 <div class="container">
     <div class="row" style="margin-bottom: 2em">
         <div class="img-banner">
-            <img src="assets/img/breton-banner/marion1.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion2.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion3.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion4.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion5.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion6.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion7.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion8.jpg" alt="" data-lightbox="katarinas">
-            <img src="assets/img/breton-banner/marion9.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion1.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion3.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion4.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion5.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion6.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion7.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion8.jpg" alt="" data-lightbox="katarinas">
+            <img class="pointer" src="assets/img/breton-banner/marion9.jpg" alt="" data-lightbox="katarinas">
         </div>
     </div>
     <div class="row">
@@ -90,15 +89,17 @@
 
 </body>
 
-<script>
-    // Displays augmented text
-    augmented = document.getElementById('augmented-btn')
-    augmented.addEventListener('click', () => {
-        let list = document.getElementsByClassName('augmented')
-        for (var i = 0; i < list.length; i++) {
-            list[i].style.opacity = 100
-        }
-    })
-</script>
+<!--<script>-->
+    <!--// Displays augmented text-->
+    <!--augmented = document.getElementById('augmented-btn')-->
+    <!--augmented.addEventListener('click', () => {-->
+        <!--let list = document.getElementsByClassName('augmented')-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--list[i].style.opacity = 100-->
+        <!--}-->
+    <!--})-->
+<!--</script>-->
+
+<div id="viewer"></div>
 
 </html>

@@ -53,6 +53,7 @@ p {
   a#augmented-btn {
     cursor: pointer;
     color: $red;
+    display: none;
   }
 }
 
@@ -97,4 +98,18 @@ p {
 
 .pointer:hover {
   cursor: pointer;
+}
+
+#viewer {
+  display: none;
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+
+  img {
+    max-width: 90% !important;
+    max-height: 90%;
+  }
 }

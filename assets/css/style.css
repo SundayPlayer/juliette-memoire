@@ -33,7 +33,8 @@ p {
     color: black; }
   .nav-group a#augmented-btn {
     cursor: pointer;
-    color: #A40300; }
+    color: #A40300;
+    display: none; }
 
 body.home {
   overflow-x: hidden; }
@@ -397,5 +398,16 @@ p {
 
 .pointer:hover {
   cursor: pointer; }
+
+#viewer {
+  display: none;
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 20px;
+  text-align: center; }
+  #viewer img {
+    max-width: 90% !important;
+    max-height: 90%; }
 
 /*# sourceMappingURL=style.css.map */

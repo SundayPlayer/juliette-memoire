@@ -1,10 +1,5 @@
-// classic way
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('l\'event documentLOADED se charge à chaque rafraichissement.')
-})
 // turbolinks way
 document.addEventListener("turbolinks:load", function() {
-  console.log('L\'event turbolinks:load se charge à chaque visite')
   // finds agmented elements to display
   let list = document.getElementsByClassName('augmented')
   if (list.length > 0) {
@@ -16,6 +11,27 @@ document.addEventListener("turbolinks:load", function() {
       for (var i = 0; i < list.length; i++) {
         list[i].style.opacity = 100
       }
+      document.getElementById('augmented-btn').style.display = 'none';
     })
+  }
+
+  let imgs = document.getElementsByClassName('pointer');
+
+  if (imgs.length > 0) {
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].addEventListener('click', function() {
+        let viewer = document.getElementById('viewer');
+        let img = this.cloneNode();
+        viewer.style.display = 'block';
+        viewer.appendChild(img);
+
+        document.addEventListener('mousedown', function() {
+          viewer.style.display = 'none';
+          while (viewer.firstChild) {
+            viewer.removeChild(viewer.firstChild);
+          }
+        })
+      })
+    }
   }
 })
